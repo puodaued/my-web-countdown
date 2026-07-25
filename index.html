@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f5f3ee" />
+  <meta
+    name="description"
+    content="Countdown สู่วันที่ 15 มีนาคม 2027"
+  />
+  <title>Countdown to Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="countdown-card" aria-labelledby="countdown-title">
+      <p class="eyebrow">COUNTDOWN TO HOME</p>
+
+      <h1 id="countdown-title">15 มีนาคม 2027</h1>
+      <p class="subtitle">อีกไม่นานก็ถึงวันกลับบ้านแล้ว</p>
+
+      <div class="countdown" aria-live="polite">
+        <div class="time-box">
+          <span class="number" id="days">000</span>
+          <span class="label">วัน</span>
+        </div>
+
+        <span class="separator" aria-hidden="true">:</span>
+
+        <div class="time-box">
+          <span class="number" id="hours">00</span>
+          <span class="label">ชั่วโมง</span>
+        </div>
+
+        <span class="separator" aria-hidden="true">:</span>
+
+        <div class="time-box">
+          <span class="number" id="minutes">00</span>
+          <span class="label">นาที</span>
+        </div>
+
+        <span class="separator" aria-hidden="true">:</span>
+
+        <div class="time-box">
+          <span class="number" id="seconds">00</span>
+          <span class="label">วินาที</span>
+        </div>
+      </div>
+
+      <div class="progress-wrap" aria-label="ความคืบหน้าของช่วงเวลานับถอยหลัง">
+        <div class="progress-track">
+          <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        <p class="progress-text" id="progress-text">กำลังคำนวณเวลา…</p>
+      </div>
+
+      <p class="finished-message" id="finished-message" hidden>
+        ถึงวันกลับบ้านแล้ว 🤍
+      </p>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
